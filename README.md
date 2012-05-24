@@ -13,17 +13,17 @@ and it will activate this virtual environment.
 
 Let's imagine we have two virtual environmets, ~/ceasar and ~/brutus
 
-cd ~/ceasar
-ave # activates ceasar
+    cd ~/ceasar
+    ave # activates ceasar
 
-cd ~/brutus
-ave # activates brutus
+    cd ~/brutus
+    ave # activates brutus
 
-cd ~
-ave ceasar # yes, this works and is the reason I named them that way
+    cd ~
+    ave ceasar # yes, this works and is the reason I named them that way
 
-cd ~/ceasar/some-dir/subdir
-ave # activates ceasar by traversing upward and looking for bin/activate
+    cd ~/ceasar/some-dir/subdir
+    ave # activates ceasar by traversing upward and looking for bin/activate
 
 How to install it?
 ==================
