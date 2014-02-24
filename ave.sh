@@ -18,7 +18,7 @@ function ave {
     elif [ -e $venvs_dir/`basename $current_dir`/$activate_script ]
     then
         # if there is virtual environment inside ~/venvs_dir, source it
-        source $venvs_dir/`basename $current_dir`/$activate_script 
+        source $venvs_dir/`basename $current_dir`/$activate_script
     else
         parent_dir=${current_dir%/*}
         # stop if parent directory is not owned by me
