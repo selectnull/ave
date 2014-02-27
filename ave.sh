@@ -20,9 +20,9 @@ function ave {
         # if there is virtual environment inside WORKON_HOME, source it
         source $venvs_dir/`basename $current_dir`/$activate_script
     else
-        parent_dir=${current_dir%/*}
-        # stop if parent directory is not owned by me
-        if [ ! -O $parent_dir ]; then return; fi
+        parent_dir="$(dirname "$current_dir")"
+        # stop if parent directory is one from what we called ave from
+        if [ $parent_dir == "." ] || [ $parent_dir == $current_dir ]; then return; fi
         # call ave for parent directory
         ave $parent_dir
     fi
