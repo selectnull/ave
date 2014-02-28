@@ -61,7 +61,7 @@ directory is changed to ``project_1``.
 One project per virtual environment
 -----------------------------------
 
-Each project has its own virtual environment.
+Each project has its own virtual environment::
 
     ave ~/projects/project_a
 
@@ -101,38 +101,43 @@ How to install it?
 Via pip
 -------
 
-    pip install ave
+Install for user::
+
+    pip install ave --user
+
+or if you want to install globally::
+
+    sudo pip install ave
 
 Manually
 --------
 
-Clone the repository and copy (or symlink) ave.sh script to your ~/bin.
+Clone the repository and source ave.sh script from your .bashrc or .profile.
 
 Configure it
 ------------
 
-Put ave.sh script in your ~/bin (or wherever you put your scripts)
-and source it by putting this line in your ~/.bashrc (or ~/.profile)::
+::
 
     # define directory to put virtual environments
     export WORKON_HOME=~/.venvs
 
     # source ave function
-    source ~/bin/ave.sh
+    source /path/to/ave.sh
 
 
 What about virtualenvwrapper?
 =============================
 
-By all means, virtualenvwrapper is mature and well tested library. It works great
-and is recommended by many pythonistas. It does so much more than ave and if you
-need its functionality, you should check it out.
+By all means, virtualenvwrapper is mature and well tested software.
+It works great and is recommended by many pythonistas. It does so much
+more than ave and if you need its functionality, you should check it out.
 
-ave uses the same ``WORKON_HOME`` evnironment variable so it's compatible with
-virtualenvwrapper, both can be used at the same time.
+ave uses the same ``WORKON_HOME`` evnironment variable so it's compatible
+with virtualenvwrapper, both can be used at the same time.
 
-ave is simple to the point that this documentation is longer than the complete
-ave code. I like simple.
+ave is simple to the point that this documentation is longer than the
+complete ave code. I like simple.
 
 
 Licence
