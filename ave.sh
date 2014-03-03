@@ -1,4 +1,5 @@
-#!/bin/bash
+
+# ave Activates Virtual Environment
 
 function ave {
     activate_script=bin/activate
