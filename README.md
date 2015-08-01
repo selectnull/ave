@@ -2,25 +2,24 @@
 ave - Activate Virtual Environment
 ==================================
 
-ave is small bash function to help out with activation of virtual
-environments; the name stands for Activate Virtual Environment
-(which is almost all it does).
+ave is small shell (bash, zsh) function to help out with activation of Python's
+virtual environments; the name stands for Activate Virtual Environment (which
+is almost all it does).
 
 
 How to use it?
 ==============
 
-ave was created out of my personal needs of organizing projects and
-need to type less. There are two ways in which ave can be used.
-If you type ``ave`` with no arguments, it will start from current
-directory and search for virtual environment by ``cd`` ing upwards
-thru parent directories or by looking inside ``~/$WORKON_HOME``.
-When virtual environment is found, it is activated (sourced).
-Called with an argument, it will do the same and optionally
-``cd`` to project directory if it's held under source controled.
+ave was created out of my personal needs of organizing projects and need to
+type less. There are two ways in which ave can be used.  If you type ``ave``
+with no arguments, it will start from current directory and search for virtual
+environment by ``cd`` ing upwards thru parent directories or by looking inside
+``~/$WORKON_HOME``.  When virtual environment is found, it is activated
+(sourced).  Called with an argument, it will do the same and optionally ``cd``
+to project directory if it's held under source control (git, mercurial or svn).
 
-The above is all ``ave`` does, but it's easier to understand with
-following example. Let's assume we have this directory structure::
+The above is all ``ave`` does, but it's easier to understand with following
+example. Let's assume we have this directory structure:
 
     # this is where we store our projects
     ~/projects/
@@ -46,11 +45,11 @@ Multiple projects based on common virtual environment
 -----------------------------------------------------
 
 These are projects that are all based on the same virtual environment,
-``common-env`` in the example::
+``common-env`` in the example:
 
     ave ~/projects/common-env/project_1
 
-or::
+or
 
     cd ~/projects/common-env/project_1
     ave
@@ -61,11 +60,11 @@ directory is changed to ``project_1``.
 One project per virtual environment
 -----------------------------------
 
-Each project has its own virtual environment::
+Each project has its own virtual environment:
 
     ave ~/projects/project_a
 
-or::
+or
 
     cd ~/projects/project_a
     ave
@@ -78,7 +77,7 @@ Playground and throwaway environmets
 
 There is often a need to test new libraries. You want to quickly make an
 environment, type out some code (directly in python shell or by creating
-a file), play with it and delete it.::
+a file), play with it and delete it.
 
     virtualenv ~/tmp/foo-playground
     cd ~/tmp/foo-playground
@@ -101,11 +100,11 @@ How to install it?
 Via pip
 -------
 
-Install for user::
+Install for user:
 
     pip install ave --user
 
-or if you want to install globally::
+or if you want to install globally:
 
     sudo pip install ave
 
@@ -116,8 +115,6 @@ Clone the repository and source ave.sh script from your .bashrc or .profile.
 
 Configure it
 ------------
-
-::
 
     # define directory to put virtual environments
     export WORKON_HOME=~/.venvs
