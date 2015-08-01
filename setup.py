@@ -6,8 +6,8 @@ setup(
     author='Sasha Matijasic',
     author_email='sasha@selectnull.com',
     scripts=['ave.sh', ],
-    url='https://bitbucket.org/selectnull/ave',
-    license='LICENSE.txt',
+    url='https://github.com/selectnull/ave',
+    license='LICENSE',
     description='ave Activates Virtual Environment',
-    long_description=open('README.txt').read(),
+    long_description=open('README.md').read(),
 )
