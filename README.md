@@ -1,4 +1,3 @@
-==================================
 ave - Activate Virtual Environment
 ==================================
 
@@ -8,7 +7,7 @@ is almost all it does).
 
 
 How to use it?
-==============
+--------------
 
 ave was created out of my personal needs of organizing projects and need to
 type less. There are two ways in which ave can be used.  If you type ``ave``
@@ -41,8 +40,7 @@ example. Let's assume we have this directory structure:
     # temp directory to work with throwaway stuff
     ~/tmp/
 
-Multiple projects based on common virtual environment
------------------------------------------------------
+### Multiple projects based on common virtual environment
 
 These are projects that are all based on the same virtual environment,
 ``common-env`` in the example:
@@ -57,8 +55,7 @@ or
 After any of those commands, ``common-env`` is activated and current
 directory is changed to ``project_1``.
 
-One project per virtual environment
------------------------------------
+### One project per virtual environment
 
 Each project has its own virtual environment:
 
@@ -72,8 +69,7 @@ or
 With bash (or any other shell) and tab completion, very few keystrokes
 are needed.
 
-Playground and throwaway environmets
-------------------------------------
+### Playground and throwaway environmets
 
 There is often a need to test new libraries. You want to quickly make an
 environment, type out some code (directly in python shell or by creating
@@ -95,10 +91,9 @@ delete temporary environmets right away after use (which I usually don't).
 
 
 How to install it?
-==================
+------------------
 
-Via pip
--------
+### Via pip
 
 Install for user:
 
@@ -108,13 +103,11 @@ or if you want to install globally:
 
     sudo pip install ave
 
-Manually
---------
+### Manually
 
 Clone the repository and source ave.sh script from your .bashrc or .profile.
 
-Configure it
-------------
+### Configure it
 
     # define directory to put virtual environments
     export WORKON_HOME=~/.venvs
@@ -124,7 +117,7 @@ Configure it
 
 
 What about virtualenvwrapper?
-=============================
+-----------------------------
 
 By all means, virtualenvwrapper is mature and well tested software.
 It works great and is recommended by many pythonistas. It does so much
@@ -138,6 +131,6 @@ complete ave code. I like simple.
 
 
 Licence
-=======
+-------
 
 ave is MIT licensed.
