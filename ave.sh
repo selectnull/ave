@@ -1,8 +1,13 @@
 # ave Activates Virtual Environment
 
-function ave {
+ave() {
     activate_script=bin/activate
-    venvs_dir=$WORKON_HOME
+
+    venvs_dir=$AVE_HOME
+    if [ -z "$venvs_dir" ]; then
+        venvs_dir=$WORKON_HOME
+    fi
+
     current_dir=$1
 
     # if ave is called without arguments, then assume current directory
